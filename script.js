@@ -49,7 +49,7 @@ document.querySelectorAll('.photo-rail').forEach((rail) => {
   let moved = false;
 
   rail.addEventListener('pointerdown', (event) => {
-    if (event.pointerType !== 'mouse' || event.button !== 0) return;
+    if (event.pointerType !== 'mouse' || event.button !== 0 || rail.scrollWidth <= rail.clientWidth + 2) return;
     isDragging = true;
     moved = false;
     startX = event.clientX;
@@ -172,4 +172,21 @@ document.querySelectorAll('.video-shelf').forEach((shelf, index) => {
   rail.addEventListener('scroll', updateControls, {passive:true});
   new ResizeObserver(updateControls).observe(rail);
   updateControls();
+});
+
+// Focusable rails retain native touch/trackpad scrolling and explicit keyboard navigation.
+document.querySelectorAll('.video-rail, .photo-rail').forEach((rail) => {
+  const label = rail.closest('.video-shelf, .photo-series').querySelector('h2').textContent;
+  rail.setAttribute('role', 'region');
+  rail.setAttribute('aria-label', `${label} works`);
+  const updateFocus = () => { rail.tabIndex = rail.scrollWidth > rail.clientWidth + 2 ? 0 : -1; };
+  new ResizeObserver(updateFocus).observe(rail);
+  updateFocus();
+  rail.addEventListener('keydown', (event) => {
+    if (event.target !== rail || !['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+    event.preventDefault();
+    const step = rail.firstElementChild.getBoundingClientRect().width + (parseFloat(getComputedStyle(rail).gap) || 0);
+    const left = event.key === 'Home' ? 0 : event.key === 'End' ? rail.scrollWidth : rail.scrollLeft + (event.key === 'ArrowLeft' ? -step : step);
+    rail.scrollTo({ left, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+  });
 });
