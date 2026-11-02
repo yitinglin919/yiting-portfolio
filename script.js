@@ -145,6 +145,7 @@ document.querySelectorAll('.photo-series').forEach(series => seriesObserver.obse
 document.querySelectorAll('.video-shelf').forEach((shelf, index) => {
   const rail = shelf.querySelector('.video-rail');
   rail.id = `video-rail-${index}`;
+  rail.classList.toggle('has-more-works', rail.querySelectorAll('.published-film').length > 2);
   const category = shelf.querySelector('h2').textContent;
   const controls = document.createElement('div');
   controls.className = 'video-controls';

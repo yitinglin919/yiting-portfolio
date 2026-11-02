@@ -177,13 +177,16 @@ h1 { margin-bottom:16px; font:normal clamp(52px,6vw,92px)/.84 "Times New Roman",
 #videos .shelf-heading { flex-direction:row; align-items:center; }
 #videos .shelf-heading h2 { font-size:30px; line-height:1.1; letter-spacing:-.025em; }
 #videos .published-film { flex:0 0 calc((100% - 28px)/2); width:calc((100% - 28px)/2); min-width:0; }
+@media (min-width:761px) {
+  #videos .video-rail.has-more-works .published-film { flex-basis:calc((100% - 56px)/2.12); width:calc((100% - 56px)/2.12); }
+}
 #videos .published-film strong { min-height:3.75em; font-size:18px; line-height:1.25; overflow-wrap:break-word; }
 .video-controls { display:flex; gap:8px; }
-.video-scroll { width:44px; height:44px; padding:0; border:1px solid var(--line); border-radius:50%; background:white; color:var(--blue); cursor:pointer; font:16px "Times New Roman",serif; }
+.video-scroll { width:44px; height:44px; padding:0; border:1px solid #9eafb3; border-radius:50%; background:white; color:#355d69; cursor:pointer; font:16px "Times New Roman",serif; }
 .video-scroll:disabled { opacity:.3; cursor:default; }
 .video-scroll:focus-visible { outline:2px solid var(--blue); outline-offset:3px; }
 @media (max-width:760px) {
-  #videos .published-film { flex-basis:92%; width:92%; }
+  #videos .published-film { flex-basis:calc((100% - 20px)/1.12); width:calc((100% - 20px)/1.12); }
   #videos .video-rail { gap:24px; }
   #videos .section-heading h1 { font-size:36px; }
   #videos .shelf-heading h2 { font-size:26px; }
