@@ -10,7 +10,7 @@ button { font:inherit; }
 .site-header { padding:32px 24px 0; }
 .site-header #site-nav { display:flex; justify-content:center; gap:clamp(20px,4vw,52px); }
 .projects-overview { max-width:100%; margin:0 auto; }
-#about { max-width:1264px; }
+#about { max-width:1144px; }
 @media(max-width:760px) {
   .site-header { padding:24px 16px 0; }
   .site-header #site-nav { gap:clamp(16px,5vw,30px); }
@@ -30,7 +30,7 @@ nav { display:grid; gap:18px; padding:0; background:none; }
 .nav-link:focus-visible { outline:1px solid #426d7a; outline-offset:4px; }
 .sidebar-note { max-width:180px; }
 main { grid-column:2; min-width:0; overflow:hidden; }
-.page { display:none; min-height:0; width:100%; max-width:1264px; margin:0 auto; padding:48px 32px 72px; }
+.page { display:none; min-height:0; width:100%; max-width:1144px; margin:0 auto; padding:48px 32px 72px; }
 .page.active { display:block; }
 .home-note { min-height:clamp(180px,25vw,340px); padding:10px 0 35px; display:flex; flex-direction:column; justify-content:end; color:var(--blue); }
 .home-note p { margin:0; font:normal 400 24px/1.45 "Ma Shan Zheng", "Kaiti SC", KaiTi, cursive; letter-spacing:.04em; }
@@ -41,9 +41,9 @@ main { grid-column:2; min-width:0; overflow:hidden; }
 .viewing-home .sidebar { position:relative; inset:auto; width:100%; padding:32px 24px 0; display:block; }
 .viewing-home .sidebar nav { display:flex; justify-content:center; gap:clamp(20px,4vw,52px); }
 .viewing-home .sidebar-note { display:none; }
-.viewing-home #home { max-width:1264px; padding:48px 32px 64px; }
+.viewing-home #home { max-width:1144px; padding:48px 32px 64px; }
 .viewing-home #home .home-note { display:none; }
-.viewing-home .showreel { margin:0 auto; max-width:1200px; }
+.viewing-home .showreel { margin:0 auto; max-width:960px; }
 .showreel-heading { margin-bottom:24px; }
 .showreel-heading h1 { margin:0; font:400 28px/1.2 "Times New Roman",Times,serif; letter-spacing:-.02em; color:var(--ink); }
 .showreel-profession { margin:8px 0 0; color:#969a9b; font:400 14px/1.5 "Times New Roman",Times,serif; letter-spacing:.065em; }
@@ -84,7 +84,7 @@ h1 { margin-bottom:16px; font:normal clamp(52px,6vw,92px)/.84 "Times New Roman",
 .project-cases { max-width:1200px; }
 .project-case { min-width:0; }
 .project-cases[hidden],.project-case[hidden],.projects-overview[hidden] { display:none; }
-.project-covers { display:grid; grid-template-columns:minmax(0,1fr); gap:56px; max-width:1200px; margin:0 auto; }
+.project-covers { display:grid; grid-template-columns:minmax(0,1fr); gap:64px; max-width:960px; margin:0 auto; }
 .project-cover { display:block; min-width:0; transition:transform 140ms ease; }
 .project-cover-image { display:block; overflow:hidden; aspect-ratio:8/5; }
 .project-cover img { display:block; width:100%; height:auto; aspect-ratio:8/5; object-fit:cover; transition:transform 400ms ease; }
@@ -190,6 +190,7 @@ h1 { margin-bottom:16px; font:normal clamp(52px,6vw,92px)/.84 "Times New Roman",
 }
 .published-film { flex:0 0 min(410px,76vw); width:min(410px,76vw); align-self:flex-start; border:0; padding:0; background:transparent; color:var(--ink); text-align:left; cursor:pointer; font-family:"Times New Roman",serif; scroll-snap-align:start; }
 .published-film img { display:block; width:100%; height:auto; object-fit:contain; }
+.published-film img.farmer-cover { aspect-ratio:8/5; object-fit:cover; object-position:center; }
 .published-film strong { display:block; margin:12px 0 6px; font-size:20px; font-weight:normal; line-height:1.25; }
 .published-film small,.social-film small { display:block; color:var(--muted); font-size:13px; line-height:1.4; }
 .social-film { flex:0 0 280px; width:280px; scroll-snap-align:start; }
