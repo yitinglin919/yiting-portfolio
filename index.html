@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yiting Lin — Video Journalist & Documentary Filmmaker</title>
     <meta name="description" content="The portfolio of Yiting Lin, Video Journalist & Documentary Filmmaker." />
-  <link rel="stylesheet" href="style.css?v=20261102-carousel" />
+  <link rel="stylesheet" href="style.css?v=20261125-editorial" />
   </head>
   <body class="viewing-home">
     <div class="site-shell">
       <header class="site-header">
         <nav id="site-nav" aria-label="Primary navigation">
-          <a class="nav-link active" href="#home" data-section="home">Home</a>
+          <a class="nav-link home-return active" href="#home" data-section="home">Home</a>
           <a class="nav-link" href="#videos" data-section="videos">Videos</a>
           <a class="nav-link" href="#photos" data-section="photos">Photos</a>
           <a class="nav-link" href="#projects" data-section="projects">Projects</a>
@@ -21,14 +21,22 @@
 
       <main>
         <section class="page active" id="home" data-page>
-          <div class="home-note" aria-hidden="true"></div>
+          <div class="home-spread">
           <figure class="showreel" aria-label="Showreel">
-            <header class="showreel-heading"><h1>Yiting Lin</h1><p class="showreel-profession">Visual Journalist &amp; Filmmaker</p></header>
+            <header class="showreel-heading"><h1><a href="#home" data-section="home">Yiting Lin</a></h1></header>
             <button class="showreel-cover" type="button" data-video="https://drive.google.com/file/d/1z5j6_HD68DETl7ptlF-6RXIYrPZrcGRc/preview?autoplay=1" data-title="Showreel" aria-label="Play showreel">
               <img src="assets/showreel-mirror-bright.jpg" alt="A woman reflected in a mirror above a sunlit kitchen, surrounded by photographs and trophies" fetchpriority="high" />
               <span class="showreel-play" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" focusable="false"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>
             </button>
+            <figcaption class="home-introduction">Visual storytelling through moving and still images.</figcaption>
           </figure>
+          <div class="home-collage" role="group" aria-label="Selected photographs">
+            <img class="collage-photo photo-01" src="assets/home/01.jpg" width="3264" height="4928" alt="An elderly person in a knitted hat seated beside a weathered wall" />
+            <img class="collage-photo photo-02" src="assets/home/02.jpg" width="3456" height="2160" alt="A yellow flower resting in silver hair" />
+            <img class="collage-photo photo-03" src="assets/home/03.jpg" width="2500" height="1562" alt="A dancer playfully sticking out her tongue among fellow performers" />
+            <img class="collage-photo photo-04" src="assets/home/04.jpg" width="3181" height="4674" alt="Red lanterns and a blue umbrella above a rain-covered car window, with someone reading inside" />
+          </div>
+          </div>
         </section>
 
         <section class="page" id="videos" data-page>
