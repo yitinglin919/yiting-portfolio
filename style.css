@@ -351,29 +351,31 @@ main { overflow:visible; }
 @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
 
 /* Homepage editorial spread. All collage coordinates are relative to its canvas.
-   Each photo exposes width, x, y and layer; height follows the original image. */
+   Each photo exposes width, x, y and layer; height follows the original image.
+   Both desktop hero images use 93% of equal columns. The 1.31 canvas keeps
+   the lower portrait inside the spread; overlaps stay left of the flower. */
 body.viewing-home { background:#fff; }
 .viewing-home .site-header .home-return { display:none; }
 .viewing-home #home { max-width:none; padding:32px 6vw 64px; }
-.home-spread { --image-top:14.784vw; display:grid; grid-template-columns:1fr 1fr; gap:4%; align-items:start; }
-.viewing-home .showreel { width:100%; max-width:none; margin:0; padding-top:var(--image-top); }
+.home-spread { --image-top:13.0944vw; display:grid; grid-template-columns:1fr 1fr; gap:4%; align-items:start; }
+.viewing-home .showreel { width:93%; max-width:none; margin:0 auto; padding-top:var(--image-top); }
 .home-spread .showreel-heading { position:absolute; width:100%; top:calc(var(--image-top) - 76px); margin:0; text-align:center; }
 .home-spread .showreel-heading h1 { font-size:clamp(30px,2.8vw,48px); font-weight:400; line-height:1.08; }
 .home-spread .showreel-heading a:focus-visible { outline:1px solid currentColor; outline-offset:6px; }
 .home-introduction { margin-top:24px; font-size:clamp(14px,1.05vw,16px); font-weight:400; text-align:center; line-height:1.5; color:var(--muted); }
-.home-collage { position:relative; width:100%; aspect-ratio:1 / 1.5; isolation:isolate; }
+.home-collage { position:relative; width:100%; aspect-ratio:1 / 1.31; isolation:isolate; }
 .home-collage .collage-photo { position:absolute; display:block; width:var(--photo-width); height:auto; left:var(--photo-x); top:var(--photo-y); z-index:var(--photo-layer); }
-.photo-01 { --photo-width:40%; --photo-x:0%; --photo-y:57%; --photo-layer:3; }
+.photo-01 { --photo-width:40%; --photo-x:0%; --photo-y:52.67%; --photo-layer:3; }
 .photo-02 { --photo-width:93%; --photo-x:7%; --photo-y:var(--image-top); --photo-layer:1; }
-.photo-06 { --photo-width:47%; --photo-x:53%; --photo-y:66%; --photo-layer:2; }
-.photo-04 { --photo-width:27%; --photo-x:1%; --photo-y:0%; --photo-layer:2; }
+.photo-06 { --photo-width:41%; --photo-x:59%; --photo-y:71%; --photo-layer:2; }
+.photo-04 { --photo-width:27%; --photo-x:11%; --photo-y:4.45%; --photo-layer:2; }
 @media(max-width:760px) {
   .viewing-home #home { padding:32px 6vw 48px; }
   .home-spread { display:flex; flex-direction:column; gap:42px; }
-  .viewing-home .showreel { padding-top:0; }
+  .viewing-home .showreel { width:100%; padding-top:0; }
   .home-spread .showreel-heading { position:static; margin-bottom:24px; }
   .home-spread .showreel-heading h1 { font-size:32px; }
   .home-introduction { margin-top:20px; font-size:14px; }
   .home-collage { width:100%; }
-  .photo-02 { --photo-y:23.333%; }
+  .photo-02 { --photo-y:23.664%; }
 }
