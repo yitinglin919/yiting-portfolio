@@ -378,3 +378,30 @@ body.viewing-home { background:#fff; }
   .home-introduction { margin-top:20px; font-size:14px; }
   .home-collage { width:100%; }
 }
+
+/* Videos: a featured editorial spread followed by a static archive. */
+#videos { max-width:1280px; padding-inline:40px; }
+#videos .section-heading { margin-bottom:36px; }
+#videos .selected-works > h2, #videos .more-works > h2 { margin:0 0 22px; font-size:26px; font-weight:400; line-height:1.2; }
+#videos .selected-works-grid { display:grid; grid-template-columns:2fr 1fr; gap:28px; align-items:start; }
+#videos .selected-supporting { display:grid; gap:28px; min-width:0; }
+#videos .selected-lead { min-width:0; }
+#videos .selected-context { min-height:64px; }
+#videos .more-works { margin-top:88px; }
+#videos .more-works-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:38px 28px; }
+#videos .published-film { display:block; width:100%; min-width:0; }
+#videos .published-film img, #videos .published-film img.farmer-cover { width:100%; height:auto; aspect-ratio:16/9; object-fit:contain; }
+#videos .published-film strong { font-size:19px; font-weight:400; line-height:1.3; margin:12px 0 6px; min-height:0; }
+#videos .selected-lead .published-film strong { font-size:24px; }
+@media(min-width:761px) and (max-width:1024px) {
+  #videos .selected-works-grid { grid-template-columns:1fr 1fr; }
+  #videos .more-works-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+@media(max-width:760px) {
+  #videos { padding-inline:20px; }
+  #videos .selected-works-grid, #videos .more-works-grid { grid-template-columns:minmax(0,1fr); gap:32px; }
+  #videos .selected-supporting { gap:32px; }
+  #videos .selected-context { min-height:24px; }
+  #videos .more-works { margin-top:64px; }
+  #videos .selected-lead .published-film strong { font-size:21px; }
+}
