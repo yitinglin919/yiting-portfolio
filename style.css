@@ -408,3 +408,7 @@ body.viewing-home { background:#fff; }
 }
 
 #videos .published-film small { font-size:13px; font-weight:400; text-align:left; }
+
+/* More Works covers share one frame, including the wider farmer photograph. */
+#videos .more-works-grid .published-film img,
+#videos .more-works-grid .published-film img.farmer-cover { aspect-ratio:8/5; object-fit:cover; object-position:center; }
