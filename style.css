@@ -356,31 +356,31 @@ main { overflow:visible; }
    Mobile uses its own composition, with every original image ratio intact. */
 body.viewing-home { background:#fff; }
 .viewing-home .site-header .home-return { display:none; }
-.viewing-home #home { max-width:none; padding:32px 6vw 64px; }
-.home-spread { --image-top:13.0944vw; display:grid; grid-template-columns:1fr 1fr; gap:2%; align-items:start; }
-.viewing-home .showreel { width:96%; max-width:none; margin:0 auto; padding-top:var(--image-top); }
-.home-spread .showreel-heading { position:absolute; width:100%; top:calc(var(--image-top) - 76px); margin:0; text-align:center; }
+.viewing-home #home { max-width:none; padding:32px 7.5vw 80px; }
+.home-spread { --image-top:calc(13.0944vw - 60px); display:grid; grid-template-columns:1fr 1fr; gap:2%; align-items:start; }
+.viewing-home .showreel { width:86.4%; max-width:none; margin:0 auto; padding-top:var(--image-top); }
+.home-spread .showreel-heading { position:absolute; width:100%; top:calc(var(--image-top) - 62px); margin:0; text-align:center; }
 .home-spread .showreel-heading h1 { font-size:clamp(30px,2.8vw,48px); font-weight:400; line-height:1.08; }
 .home-spread .showreel-heading a:focus-visible { outline:1px solid currentColor; outline-offset:6px; }
-.home-introduction { margin-top:24px; font-size:clamp(14px,1.05vw,16px); font-weight:400; text-align:center; line-height:1.5; color:var(--muted); }
+.home-introduction { margin-top:16px; font-size:clamp(14px,1.05vw,16px); font-weight:400; text-align:center; line-height:1.5; color:var(--muted); }
 .home-collage { position:relative; width:100%; aspect-ratio:1 / 1; isolation:isolate; }
 .home-collage .collage-photo { position:absolute; display:block; width:var(--photo-width); height:auto; left:var(--photo-x); top:var(--photo-y); z-index:var(--photo-layer); }
 .collage-flower { --photo-width:43%; --photo-x:3%; --photo-y:0%; --photo-layer:1; }
-.collage-portrait { --photo-width:33%; --photo-x:3%; --photo-y:31%; --photo-layer:1; }
-.collage-hands { --photo-width:46%; --photo-x:52%; --photo-y:17%; --photo-layer:1; }
-.collage-doorway { --photo-width:40%; --photo-x:58%; --photo-y:57%; --photo-layer:1; }
+.collage-portrait { --photo-width:33%; --photo-x:3%; --photo-y:29%; --photo-layer:1; }
+.collage-hands { --photo-width:46%; --photo-x:50%; --photo-y:17%; --photo-layer:1; }
+.collage-doorway { --photo-width:40%; --photo-x:56%; --photo-y:50%; --photo-layer:1; }
 @media(max-width:760px) {
   .viewing-home #home { padding:32px 6vw 48px; }
   .home-spread { display:flex; flex-direction:column; gap:28px; }
   .viewing-home .showreel { width:100%; padding-top:0; }
-  .home-spread .showreel-heading { position:static; margin-bottom:24px; }
+  .home-spread .showreel-heading { position:static; margin-bottom:18px; }
   .home-spread .showreel-heading h1 { font-size:32px; }
-  .home-introduction { margin-top:20px; font-size:14px; }
+  .home-introduction { margin-top:16px; font-size:14px; }
   .home-collage { width:100%; aspect-ratio:1 / 1.2; }
-  .collage-flower { --photo-width:58%; --photo-x:4%; --photo-y:0%; }
-  .collage-portrait { --photo-width:38%; --photo-x:4%; --photo-y:34%; }
-  .collage-hands { --photo-width:56%; --photo-x:44%; --photo-y:23%; }
-  .collage-doorway { --photo-width:47%; --photo-x:49%; --photo-y:67%; }
+  .collage-flower { --photo-width:55%; --photo-x:2%; --photo-y:0%; }
+  .collage-portrait { --photo-width:38%; --photo-x:2%; --photo-y:36%; }
+  .collage-hands { --photo-width:54%; --photo-x:44%; --photo-y:35%; }
+  .collage-doorway { --photo-width:45%; --photo-x:49%; --photo-y:66%; }
 }
 
 /* Videos: a featured editorial spread followed by a static archive. */
