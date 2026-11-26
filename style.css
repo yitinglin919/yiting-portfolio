@@ -432,8 +432,15 @@ body.viewing-home { background:#fff; }
   font-weight: 400;
   font-display: swap;
 }
+@font-face {
+  font-family: "maki_maruhand";
+  src: url("assets/fonts/maki_maruhand.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
 .home-spread .showreel-heading h1 {
-  font-family: "HuiFontP", cursive;
+  font-family: "maki_maruhand", cursive;
   font-size: clamp(25px, 2.2vw, 36px);
   white-space: nowrap;
   font-weight: 400;
@@ -442,7 +449,7 @@ body.viewing-home { background:#fff; }
   line-height: 1.08;
 }
 .home-spread .home-introduction {
-  font-family: "HuiFontP", cursive;
+  font-family: "maki_maruhand", cursive;
   font-size: clamp(15px, 1.2vw, 19px);
   letter-spacing: 0;
   line-height: 1.2;
