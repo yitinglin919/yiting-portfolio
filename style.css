@@ -356,7 +356,7 @@ main { overflow:visible; }
    Mobile uses its own composition, with every original image ratio intact. */
 body.viewing-home { background:#fff; }
 .viewing-home .site-header .home-return { display:none; }
-.viewing-home #home { max-width:none; padding:32px 7.5vw 80px; }
+.viewing-home #home { max-width:none; padding:clamp(112px, calc(50vh - 338px), 132px) 7.5vw 80px; }
 .home-spread { --image-top:calc(13.0944vw - 60px); display:grid; grid-template-columns:1fr 1fr; gap:2%; align-items:start; }
 .viewing-home .showreel { width:86.4%; max-width:none; margin:0 auto; padding-top:var(--image-top); }
 .home-spread .showreel-heading { position:absolute; width:100%; top:calc(var(--image-top) - 62px); margin:0; text-align:center; }
@@ -463,10 +463,10 @@ body.viewing-home { background:#fff; }
 #projects .project-case .case-hero { margin:0 0 50px; }
 #projects .project-case .case-hero img { width:100%; height:auto; }
 #projects .project-case .case-about, #projects .project-case .project-reflections,
-#projects .project-case .home-away-story { display:grid; grid-template-columns:23% minmax(0,1fr); gap:32px; border-top:1px solid var(--line); padding:36px 0 58px; }
+#projects .project-case .home-away-story { display:grid; grid-template-columns:23% minmax(0,1fr); gap:32px; border-top:0; padding:52px 0 70px; }
 #projects .project-case .case-about h3, #projects .project-case .home-away-story h3 { font-size:18px; color:var(--ink); letter-spacing:0; }
 #projects .project-case .case-prose, #projects .project-case .home-away-story p { max-width:780px; font-size:19px; line-height:1.65; }
-#projects .project-case .story-heading { max-width:none; border-top:1px solid var(--line); padding-top:36px; margin:30px 0 26px; }
+#projects .project-case .story-heading { max-width:none; border-top:0; padding-top:54px; margin:36px 0 26px; }
 #projects .project-case .story-heading h3 { font-size:30px; }
 #projects .project-case .story-number { font-size:24px; color:var(--ink); }
 #projects .project-case .story-heading .story-description { font-size:17px; }
@@ -494,11 +494,11 @@ body.viewing-home { background:#fff; }
 #projects .project-case .birthday-video-slot h3, #projects .project-case .case-video h3 { display:block; color:var(--muted); font-size:15px; }
 #projects .project-case .project-film span { left:50%; top:50%; right:auto; bottom:auto; transform:translate(-50%,-50%); display:grid; place-items:center; width:52px; height:52px; padding:0; overflow:hidden; font-size:0; border:1px solid rgba(255,255,255,.75); border-radius:50%; background:rgba(0,0,0,.22); color:white; }
 #projects .project-case .project-film span::after { content:'▶'; font-size:18px; line-height:1; margin-left:3px; }
-#projects .project-case .project-reflections { margin:0; }
+#projects .project-case .project-reflections { margin:0; padding-top:68px; }
 #projects .project-case .project-reflections .reflection-kicker { display:none; }
 #projects #project-home-away .home-away-opening { display:grid; grid-template-columns:59% minmax(0,1fr); align-items:center; gap:6%; margin:0 0 55px; }
 #projects #project-home-away .home-away-opening img { width:100%; height:auto; }
-#projects #project-home-away .home-away-opening p { font-size:clamp(24px,2.8vw,32px); line-height:1.34; margin:0; }
+#projects #project-home-away .home-away-opening p { font-size:clamp(20px,2.1vw,25px); line-height:1.45; margin:0; }
 #projects #project-home-away .home-away-story { border:0; padding:0 0 58px; }
 #projects #project-home-away #home-away-stills { grid-template-columns:repeat(10,minmax(0,1fr)); gap:50px 30px; align-items:center; }
 #projects #home-away-stills .project-still:nth-child(1) { grid-column:1/7; }
