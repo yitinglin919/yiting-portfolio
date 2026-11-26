@@ -493,7 +493,7 @@ body.viewing-home { background:#fff; }
 #projects .project-case .project-still img { width:100%; height:auto; object-fit:contain; }
 #projects .project-case .case-gallery { gap:40px; align-items:center; }
 #projects #fantasy-stills { grid-template-columns:58% minmax(0,1fr); }
-#projects #project-fantasy-date .case-emphasis { font-size:clamp(25px,2.5vw,31px); line-height:1.35; margin-top:28px; }
+#projects #project-fantasy-date .case-emphasis { margin-top:28px; }
 #projects #project-fantasy-date .birthday-opening .case-gallery { grid-template-columns:59% minmax(0,1fr); gap:5%; align-items:center; }
 #projects #project-fantasy-date .birthday-opening-text,
 #projects #project-fantasy-date .birthday-privacy p { font-size:19px; line-height:1.6; margin:0; }
