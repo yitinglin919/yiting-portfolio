@@ -365,10 +365,10 @@ body.viewing-home { background:#fff; }
 .home-introduction { margin-top:24px; font-size:clamp(14px,1.05vw,16px); font-weight:400; text-align:center; line-height:1.5; color:var(--muted); }
 .home-collage { position:relative; width:100%; aspect-ratio:1 / 1; isolation:isolate; }
 .home-collage .collage-photo { position:absolute; display:block; width:var(--photo-width); height:auto; left:var(--photo-x); top:var(--photo-y); z-index:var(--photo-layer); }
- .collage-flower { --photo-width:43%; --photo-x:3%; --photo-y:0%; --photo-layer:1; }
-.collage-portrait { --photo-width:33.2%; --photo-x:0%; --photo-y:31.2%; --photo-layer:1; }
-.collage-hands { --photo-width:69%; --photo-x:31%; --photo-y:24.5%; --photo-layer:2; }
-.collage-doorway { --photo-width:44.5%; --photo-x:53.3%; --photo-y:71.5%; --photo-layer:1; }
+.collage-flower { --photo-width:43%; --photo-x:3%; --photo-y:0%; --photo-layer:1; }
+.collage-portrait { --photo-width:33%; --photo-x:3%; --photo-y:31%; --photo-layer:1; }
+.collage-hands { --photo-width:46%; --photo-x:52%; --photo-y:17%; --photo-layer:1; }
+.collage-doorway { --photo-width:40%; --photo-x:58%; --photo-y:57%; --photo-layer:1; }
 @media(max-width:760px) {
   .viewing-home #home { padding:32px 6vw 48px; }
   .home-spread { display:flex; flex-direction:column; gap:28px; }
@@ -377,10 +377,10 @@ body.viewing-home { background:#fff; }
   .home-spread .showreel-heading h1 { font-size:32px; }
   .home-introduction { margin-top:20px; font-size:14px; }
   .home-collage { width:100%; aspect-ratio:1 / 1.2; }
-  .collage-flower { --photo-width:60%; --photo-x:6%; --photo-y:0%; }
-  .collage-portrait { --photo-width:40%; --photo-x:0%; --photo-y:35%; }
-  .collage-hands { --photo-width:64%; --photo-x:36%; --photo-y:29%; }
-  .collage-doorway { --photo-width:48%; --photo-x:49%; --photo-y:66%; }
+  .collage-flower { --photo-width:58%; --photo-x:4%; --photo-y:0%; }
+  .collage-portrait { --photo-width:38%; --photo-x:4%; --photo-y:34%; }
+  .collage-hands { --photo-width:56%; --photo-x:44%; --photo-y:23%; }
+  .collage-doorway { --photo-width:47%; --photo-x:49%; --photo-y:67%; }
 }
 
 /* Videos: a featured editorial spread followed by a static archive. */
@@ -419,20 +419,35 @@ body.viewing-home { background:#fff; }
 
 /* Personal signature: scoped to the homepage name only. */
 @font-face {
-  font-family: "Showclick";
-  src: url("assets/fonts/Showclick.ttf") format("truetype");
+  font-family: "HaruTegakiFont";
+  src: url("assets/fonts/HaruTegakiFont12.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "HuiFontP";
+  src: url("assets/fonts/HuiFontP29.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
 .home-spread .showreel-heading h1 {
-  font-family: "Showclick", cursive;
-  font-size: clamp(38px, 3.5vw, 58px);
+  font-family: "HuiFontP", cursive;
+  font-size: clamp(25px, 2.2vw, 36px);
+  white-space: nowrap;
   font-weight: 400;
   letter-spacing: 0;
   text-transform: none;
   line-height: 1.08;
 }
+.home-spread .home-introduction {
+  font-family: "HuiFontP", cursive;
+  font-size: clamp(15px, 1.2vw, 19px);
+  letter-spacing: 0;
+  line-height: 1.2;
+}
 @media (max-width:760px) {
-  .home-spread .showreel-heading h1 { font-size:40px; }
+  .home-spread .showreel-heading h1 { font-size:clamp(22px, 6vw, 29px); }
+  .home-spread .home-introduction { font-size:15px; }
 }
