@@ -371,16 +371,16 @@ body.viewing-home { background:#fff; }
 .collage-doorway { --photo-width:40%; --photo-x:56%; --photo-y:50%; --photo-layer:1; }
 @media(max-width:760px) {
   .viewing-home #home { padding:14px 6vw 48px; }
-  .home-spread { display:flex; flex-direction:column; gap:28px; }
+  .home-spread { display:flex; flex-direction:column; gap:38px; }
   .viewing-home .showreel { width:100%; padding-top:0; }
   .home-spread .showreel-heading { position:static; margin-bottom:18px; }
   .home-spread .showreel-heading h1 { font-size:32px; }
   .home-introduction { margin-top:16px; font-size:14px; }
   .home-collage { width:100%; aspect-ratio:1 / 1.05; }
   .collage-flower { --photo-width:52%; --photo-x:0%; --photo-y:0%; }
-  .collage-portrait { --photo-width:43%; --photo-x:0%; --photo-y:37%; }
+  .collage-portrait { --photo-width:43%; --photo-x:0%; --photo-y:36.2%; }
   .collage-hands { --photo-width:43%; --photo-x:57%; --photo-y:13%; }
-  .collage-doorway { --photo-width:45%; --photo-x:55%; --photo-y:48%; }
+  .collage-doorway { --photo-width:45%; --photo-x:55%; --photo-y:46.7%; }
 }
 
 /* Videos: a featured editorial spread followed by a static archive. */
@@ -476,7 +476,7 @@ body.viewing-home { background:#fff; }
 }
 @media (max-width:760px) {
   .home-spread .showreel-heading h1 { font-size:clamp(22px, 6vw, 29px); }
-  .home-spread .home-introduction { font-size:18px; }
+  .home-spread .home-introduction { font-size:15.8px; }
 }
 
 /* Project essays: an editorial reading column with photographs at their native ratio. */
