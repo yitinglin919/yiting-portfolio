@@ -484,7 +484,8 @@ body.viewing-home { background:#fff; }
 #projects .project-case .case-about, #projects .project-case .project-reflections,
 #projects .project-case .home-away-story { display:grid; grid-template-columns:23% minmax(0,1fr); gap:32px; border-top:0; padding:52px 0 70px; }
 #projects .project-case .case-about h3, #projects .project-case .home-away-story h3 { font-size:18px; color:var(--ink); letter-spacing:0; }
-#projects .project-case .case-prose, #projects .project-case .home-away-story p { max-width:780px; font-size:19px; line-height:1.65; }
+#projects .project-case .case-prose, #projects .project-case .home-away-story p,
+#projects #project-home-away .home-away-opening p { max-width:780px; font-size:19px; line-height:1.65; }
 #projects .project-case .story-heading { max-width:none; border-top:0; padding-top:54px; margin:36px 0 26px; }
 #projects .project-case .story-heading h3 { font-size:30px; }
 #projects .project-case .story-number { font-size:24px; color:var(--ink); }
@@ -517,7 +518,7 @@ body.viewing-home { background:#fff; }
 #projects .project-case .project-reflections .reflection-kicker { display:none; }
 #projects #project-home-away .home-away-opening { display:grid; grid-template-columns:59% minmax(0,1fr); align-items:center; gap:6%; margin:0 0 55px; }
 #projects #project-home-away .home-away-opening img { width:100%; height:auto; }
-#projects #project-home-away .home-away-opening p { font-family:"HuiFontP",cursive; font-size:clamp(17px,1.55vw,20px); line-height:1.5; letter-spacing:0; margin:0; }
+#projects #project-home-away .home-away-opening p { margin:0; }
 #projects #project-home-away .home-away-story { border:0; padding:0 0 58px; }
 #projects #project-home-away #home-away-stills { grid-template-columns:repeat(10,minmax(0,1fr)); gap:50px 30px; align-items:center; }
 #projects #home-away-stills .project-still:nth-child(1) { grid-column:1/7; }
@@ -537,7 +538,8 @@ body.viewing-home { background:#fff; }
   #projects .project-case .case-about, #projects .project-case .project-reflections,
   #projects .project-case .home-away-story, #projects .project-case .case-intro { display:block; padding:24px 0 40px; }
   #projects .project-case .case-intro { border:0; margin:20px 0 45px; }
-  #projects .project-case .case-prose, #projects .project-case .home-away-story p { font-size:17px; }
+  #projects .project-case .case-prose, #projects .project-case .home-away-story p,
+  #projects #project-home-away .home-away-opening p { font-size:17px; }
   #projects .project-case .case-gallery, #projects #fantasy-stills,
   #projects #birthday-stills, #projects #project-home-away #home-away-stills,
   #projects #project-home-away .home-away-later .case-gallery { display:grid; grid-template-columns:minmax(0,1fr); gap:24px; }
