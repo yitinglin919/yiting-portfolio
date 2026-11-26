@@ -549,3 +549,18 @@ body.viewing-home { background:#fff; }
   #projects #project-home-away .home-away-opening p { margin-top:24px; }
   #projects .project-case .birthday-video-slot, #projects .project-case .case-video { margin:50px 0; }
 }
+
+/* Projects index: two equal editorial covers, without card treatment. */
+body:has(#projects.active .projects-overview:not([hidden])) { background:#fff; }
+#projects:has(.projects-overview:not([hidden])) { max-width:1200px; padding:64px 56px 96px; }
+#projects .projects-overview .section-heading { margin-bottom:42px; }
+#projects .projects-overview .project-covers { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:48px; max-width:none; }
+#projects .projects-overview .project-cover-image { aspect-ratio:auto; overflow:visible; }
+#projects .projects-overview .project-cover img { width:100%; height:auto; aspect-ratio:auto; object-fit:contain; }
+#projects .projects-overview .project-cover h2,
+#projects .projects-overview .project-cover p { text-align:left; }
+@media(max-width:760px) {
+  #projects:has(.projects-overview:not([hidden])) { padding:40px 24px 72px; }
+  #projects .projects-overview .section-heading { margin-bottom:30px; }
+  #projects .projects-overview .project-covers { grid-template-columns:minmax(0,1fr); gap:42px; }
+}
