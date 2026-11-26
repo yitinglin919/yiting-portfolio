@@ -564,3 +564,30 @@ body:has(#projects.active .projects-overview:not([hidden])) { background:#fff; }
   #projects .projects-overview .section-heading { margin-bottom:30px; }
   #projects .projects-overview .project-covers { grid-template-columns:minmax(0,1fr); gap:42px; }
 }
+
+/* Final spacing pass across the three archive landing pages. */
+@media(min-width:761px) {
+  #videos, #photos, #projects:has(.projects-overview:not([hidden])) { padding-top:56px; }
+  .home-spread { --image-top:clamp(40px, calc(13.0944vw - 126px), 130px); }
+  .viewing-home .showreel { width:101.7%; margin-left:-3.75%; }
+  #photos .photo-index { margin-bottom:28px; }
+  #photos .photo-placeholder.landscape { flex-basis:68%; }
+  #photos .photo-placeholder.portrait { flex-basis:28.5%; }
+}
+#videos .section-heading h1,
+#photos .section-heading h1,
+#projects .projects-overview .section-heading h1 { font-size:40px; line-height:1.1; letter-spacing:-.035em; font-weight:400; }
+#photos .section-heading { margin-bottom:44px; }
+#projects .projects-overview .project-cover h2 { font-size:clamp(22px, 2.25vw, 29px); }
+@media(max-width:760px) {
+  .site-shell #videos, .site-shell #photos,
+  .site-shell #projects:has(.projects-overview:not([hidden])) { padding-top:40px; }
+  #videos .section-heading h1,
+  #photos .section-heading h1,
+  #projects .projects-overview .section-heading h1 { font-size:34px; }
+  #photos .section-heading { margin-bottom:35px; }
+}
+@media(min-width:761px) and (max-height:760px) {
+  #photos .photo-placeholder.landscape { flex-basis:58%; }
+  #photos .photo-placeholder.portrait { flex-basis:25%; }
+}
