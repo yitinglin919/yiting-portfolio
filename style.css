@@ -359,7 +359,7 @@ body.viewing-home { background:#fff; }
 .viewing-home #home { max-width:none; padding:clamp(112px, calc(50vh - 338px), 132px) 7.5vw 80px; }
 .home-spread { --image-top:calc(13.0944vw - 111px); display:grid; grid-template-columns:1fr 1fr; gap:2%; align-items:start; }
 .viewing-home .showreel { width:94.2%; max-width:none; margin:0 auto; padding-top:var(--image-top); }
-.home-spread .showreel-heading { position:absolute; width:100%; top:calc(var(--image-top) - 30px - clamp(27px, 2.376vw, 38.88px)); margin:0; text-align:center; }
+.home-spread .showreel-heading { position:absolute; width:100%; top:calc(var(--image-top) - 25px - clamp(27px, 2.376vw, 38.88px)); margin:0; text-align:center; }
 .home-spread .showreel-heading h1 { font-size:clamp(30px,2.8vw,48px); font-weight:400; line-height:1.08; }
 .home-spread .showreel-heading a:focus-visible { outline:1px solid currentColor; outline-offset:6px; }
 .home-introduction { margin-top:16px; font-size:clamp(14px,1.05vw,16px); font-weight:400; text-align:center; line-height:1.5; color:var(--muted); }
