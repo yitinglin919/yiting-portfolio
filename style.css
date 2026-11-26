@@ -357,8 +357,8 @@ main { overflow:visible; }
 body.viewing-home { background:#fff; }
 .viewing-home .site-header .home-return { display:none; }
 .viewing-home #home { max-width:none; padding:clamp(112px, calc(50vh - 338px), 132px) 7.5vw 80px; }
-.home-spread { --image-top:calc(13.0944vw - 60px); display:grid; grid-template-columns:1fr 1fr; gap:2%; align-items:start; }
-.viewing-home .showreel { width:86.4%; max-width:none; margin:0 auto; padding-top:var(--image-top); }
+.home-spread { --image-top:calc(13.0944vw - 111px); display:grid; grid-template-columns:1fr 1fr; gap:2%; align-items:start; }
+.viewing-home .showreel { width:94.2%; max-width:none; margin:0 auto; padding-top:var(--image-top); }
 .home-spread .showreel-heading { position:absolute; width:100%; top:calc(var(--image-top) - 62px); margin:0; text-align:center; }
 .home-spread .showreel-heading h1 { font-size:clamp(30px,2.8vw,48px); font-weight:400; line-height:1.08; }
 .home-spread .showreel-heading a:focus-visible { outline:1px solid currentColor; outline-offset:6px; }
@@ -447,6 +447,25 @@ body.viewing-home { background:#fff; }
   letter-spacing: 0;
   line-height: 1.2;
   color: var(--ink);
+}
+
+/* About keeps its two-column portrait and biography, with a quieter signature. */
+#about { max-width:1040px; padding:64px 44px 80px; }
+#about .section-heading { margin-bottom:32px; }
+#about .section-heading h1 {
+  font-family:"HuiFontP", cursive;
+  font-size:clamp(30px,3vw,36px);
+  font-weight:400;
+  line-height:1.15;
+  letter-spacing:0;
+  margin:0;
+}
+#about .about-layout { gap:clamp(36px,5vw,60px); }
+@media(max-width:760px) {
+  #about { padding:40px 24px 64px; }
+  #about .section-heading { margin-bottom:26px; }
+  #about .section-heading h1 { font-size:30px; }
+  #about .about-layout { grid-template-columns:minmax(0,1fr); gap:30px; }
 }
 @media (max-width:760px) {
   .home-spread .showreel-heading h1 { font-size:clamp(22px, 6vw, 29px); }
