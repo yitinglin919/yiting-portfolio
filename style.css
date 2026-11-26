@@ -500,12 +500,15 @@ body.viewing-home { background:#fff; }
 #projects #project-home-away #home-away-stills { grid-template-columns:repeat(10,minmax(0,1fr)); gap:50px 30px; align-items:center; }
 #projects #home-away-stills .project-still:nth-child(1) { grid-column:1/7; }
 #projects #home-away-stills .project-still:nth-child(2) { grid-column:7/11; }
-#projects #home-away-stills .project-still:nth-child(3) { grid-column:1/6; }
+#projects #home-away-stills .project-still:nth-child(3) { grid-column:1/5; }
 #projects #home-away-stills .project-still:nth-child(4) { grid-column:6/11; }
-#projects #home-away-stills .project-still:nth-child(5) { grid-column:1/6; }
-#projects #home-away-stills .project-still:nth-child(6) { grid-column:6/11; }
-#projects #home-away-stills .project-still:nth-child(7) { grid-column:3/9; }
-#projects #home-away-stills .project-still:nth-child(8) { grid-column:3/9; }
+#projects #project-home-away .home-away-detail { margin:48px 0 56px; }
+#projects #project-home-away .home-away-later .case-gallery { grid-template-columns:repeat(10,minmax(0,1fr)); gap:50px 30px; align-items:center; }
+#projects #project-home-away .home-away-later .project-still:nth-child(1) { grid-column:1/6; }
+#projects #project-home-away .home-away-later .project-still:nth-child(2) { grid-column:6/11; }
+#projects #project-home-away .home-away-later .project-still:nth-child(3),
+#projects #project-home-away .home-away-later .project-still:nth-child(4) { grid-column:3/9; }
+#projects #project-home-away .case-about .case-meta { margin-top:24px; }
 @media(max-width:760px) {
   #projects .project-case .case-heading h2 { font-size:34px; }
   #projects .project-case .case-heading .project-deck { font-size:17px; }
@@ -514,7 +517,8 @@ body.viewing-home { background:#fff; }
   #projects .project-case .case-intro { border:0; margin:20px 0 45px; }
   #projects .project-case .case-prose, #projects .project-case .home-away-story p { font-size:17px; }
   #projects .project-case .case-gallery, #projects #fantasy-stills,
-  #projects #birthday-stills, #projects #project-home-away #home-away-stills { display:grid; grid-template-columns:minmax(0,1fr); gap:24px; }
+  #projects #birthday-stills, #projects #project-home-away #home-away-stills,
+  #projects #project-home-away .home-away-later .case-gallery { display:grid; grid-template-columns:minmax(0,1fr); gap:24px; }
   #projects .project-case .case-gallery .project-still { grid-column:1 !important; grid-row:auto !important; width:100%; }
   #projects #project-home-away .home-away-opening { display:block; }
   #projects #project-home-away .home-away-opening p { margin-top:24px; }
