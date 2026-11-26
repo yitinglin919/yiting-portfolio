@@ -2,6 +2,7 @@ const links = document.querySelectorAll('[data-section]');
 const pages = document.querySelectorAll('[data-page]');
 const modal = document.querySelector('#video-modal');
 const player = document.querySelector('#video-player');
+const nativePlayer = document.querySelector('#native-video-player');
 const modalTitle = document.querySelector('#video-title');
 
 function showPage(id, projectId = null) {
@@ -27,13 +28,23 @@ links.forEach((link) => link.addEventListener('click', (event) => {
 }));
 
 document.querySelectorAll('[data-video]').forEach((item) => item.addEventListener('click', () => {
-  player.src = item.dataset.video;
+  const useNativePlayer = Boolean(item.dataset.nativeVideo) && matchMedia('(max-width:760px)').matches;
   modalTitle.textContent = item.dataset.title || 'Video';
+  player.hidden = useNativePlayer;
+  nativePlayer.hidden = !useNativePlayer;
+  if (useNativePlayer) nativePlayer.src = item.dataset.nativeVideo;
+  else player.src = item.dataset.video;
   modal.showModal();
+  if (useNativePlayer) nativePlayer.play().catch(() => {});
 }));
 
 document.querySelector('.close-modal').addEventListener('click', () => modal.close());
-modal.addEventListener('close', () => { player.src = ''; });
+modal.addEventListener('close', () => {
+  player.src = '';
+  nativePlayer.pause();
+  nativePlayer.removeAttribute('src');
+  nativePlayer.load();
+});
 modal.addEventListener('click', (event) => { if (event.target === modal) modal.close(); });
 
 document.querySelectorAll('.rail-button').forEach((button) => button.addEventListener('click', () => {

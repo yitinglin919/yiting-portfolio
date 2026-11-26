@@ -247,6 +247,8 @@ h1 { margin-bottom:16px; font:normal clamp(52px,6vw,92px)/.84 "Times New Roman",
   .about-biography { font-size:16px; }
 }
 dialog { width:min(1000px,94vw); padding:0; border:0; background:#fff; box-shadow:0 25px 70px rgba(0,0,0,.28); }dialog::backdrop { background:rgba(12,20,28,.75); backdrop-filter:blur(4px); }.modal-top { display:flex; justify-content:space-between; align-items:center; padding:14px 16px; }.modal-top p,.close-modal,.close-photo-modal { margin:0; font:14px "Times New Roman",serif; }.close-modal,.close-photo-modal { border:0; background:transparent; color:var(--blue); cursor:pointer; }.player-wrap { aspect-ratio:16/9; background:#10161d; }.player-wrap iframe { display:block; width:100%; height:100%; border:0; }.photo-large { display:grid; place-items:center; min-height:min(70vh,760px); color:var(--muted); background:#10161d; }.photo-large img { display:block; max-width:100%; max-height:min(70vh,760px); object-fit:contain; }.photo-large span { font-size:15px; }
+.player-wrap video { display:block; width:100%; height:100%; background:#10161d; }
+.player-wrap [hidden] { display:none; }
 .blockhouse-cover { color:#fff; background:linear-gradient(rgba(12,23,26,.12),rgba(12,23,26,.28)),url('assets/blockhouse-bay.jpg') center/cover; }.blockhouse-cover small { color:rgba(255,255,255,.8); }
 /* Constrain grid children so the photo rail, not the whole page, overflows. */
 #photos .photo-archive { grid-template-columns:minmax(0,1fr); }

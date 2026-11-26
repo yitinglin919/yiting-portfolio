@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yiting Lin — Video Journalist & Documentary Filmmaker</title>
     <meta name="description" content="The portfolio of Yiting Lin, Video Journalist & Documentary Filmmaker." />
-  <link rel="stylesheet" href="style.css?v=20261126-mobile-editorial-spacing" />
+  <link rel="stylesheet" href="style.css?v=20261126-mobile-showreel" />
   </head>
   <body class="viewing-home">
     <div class="site-shell">
@@ -24,7 +24,7 @@
           <div class="home-spread">
           <figure class="showreel" aria-label="Showreel">
             <header class="showreel-heading"><h1><a href="#home" data-section="home">YITING LIN</a></h1></header>
-            <button class="showreel-cover" type="button" data-video="https://drive.google.com/file/d/1z5j6_HD68DETl7ptlF-6RXIYrPZrcGRc/preview?autoplay=1" data-title="Showreel" aria-label="Play showreel">
+            <button class="showreel-cover" type="button" data-video="https://drive.google.com/file/d/1z5j6_HD68DETl7ptlF-6RXIYrPZrcGRc/preview?autoplay=1" data-native-video="assets/showreel-web.mp4" data-title="Showreel" aria-label="Play showreel">
               <img src="assets/showreel-mirror-bright.jpg" alt="A woman reflected in a mirror above a sunlit kitchen, surrounded by photographs and trophies" fetchpriority="high" />
               <span class="showreel-play" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" focusable="false"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>
             </button>
@@ -251,12 +251,12 @@
 
     <dialog id="video-modal" aria-labelledby="video-title">
       <div class="modal-top"><p id="video-title">Video</p><button class="close-modal" aria-label="Close video">Close ×</button></div>
-      <div class="player-wrap"><iframe id="video-player" title="Portfolio video" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+      <div class="player-wrap"><iframe id="video-player" title="Portfolio video" allow="autoplay; fullscreen" allowfullscreen></iframe><video id="native-video-player" controls playsinline preload="none" poster="assets/showreel-mirror-bright.jpg" aria-label="Showreel video" hidden></video></div>
     </dialog>
     <dialog id="photo-modal" aria-labelledby="photo-title">
       <div class="modal-top"><p id="photo-title">Photo</p><button class="close-photo-modal" aria-label="Close photo">Close ×</button></div>
       <div class="photo-large"><span>Selected image</span></div>
     </dialog>
-    <script src="script.js?v=20261102-carousel"></script>
+    <script src="script.js?v=20261126-mobile-showreel"></script>
   </body>
 </html>
