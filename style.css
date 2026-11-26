@@ -568,7 +568,7 @@ body:has(#projects.active .projects-overview:not([hidden])) { background:#fff; }
 /* Final spacing pass across the three archive landing pages. */
 @media(min-width:761px) {
   #videos, #photos, #projects:has(.projects-overview:not([hidden])) { padding-top:56px; }
-  .home-spread { --image-top:clamp(40px, calc(13.0944vw - 126px), 130px); }
+  .home-spread { --image-top:clamp(40px, calc(13.0944vw - 126px), 130px); transform:translateX(1.9%); }
   .viewing-home .showreel { width:101.7%; margin-left:-3.75%; }
   #photos .photo-index { margin-bottom:28px; }
   #photos .photo-placeholder.landscape { flex-basis:68%; }
