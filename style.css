@@ -473,19 +473,22 @@ body.viewing-home { background:#fff; }
 #projects .project-case .project-still img { width:100%; height:auto; object-fit:contain; }
 #projects .project-case .case-gallery { gap:40px; align-items:center; }
 #projects #fantasy-stills { grid-template-columns:58% minmax(0,1fr); }
-#projects #birthday-stills { grid-template-columns:repeat(2,minmax(0,1fr)); gap:55px 48px; }
-#projects #birthday-stills .project-still:first-child { grid-column:1; width:100%; }
-#projects #birthday-stills .project-still:nth-child(2) { grid-column:1; }
-#projects #birthday-stills .project-still:nth-child(3) { grid-column:2; grid-row:2; }
-#projects #birthday-stills .project-still:nth-child(4) { grid-column:1; }
-#projects #birthday-stills .project-still:nth-child(5) { grid-column:1; }
-#projects #birthday-stills .project-still:nth-child(6) { grid-column:2; grid-row:4; }
+#projects #project-fantasy-date .case-emphasis { font-size:clamp(25px,2.5vw,31px); line-height:1.35; margin-top:28px; }
+#projects #project-fantasy-date .birthday-opening .case-gallery { grid-template-columns:59% minmax(0,1fr); gap:5%; align-items:center; }
+#projects #project-fantasy-date .birthday-opening-text,
+#projects #project-fantasy-date .birthday-privacy p { font-size:19px; line-height:1.6; margin:0; }
+#projects #project-fantasy-date .birthday-pair .case-gallery { grid-template-columns:repeat(2,minmax(0,1fr)); gap:48px; align-items:center; }
+#projects #project-fantasy-date .birthday-privacy .case-gallery { grid-template-columns:48% minmax(0,1fr); gap:7%; align-items:center; }
+#projects #project-fantasy-date .birthday-opening,
+#projects #project-fantasy-date .birthday-pair,
+#projects #project-fantasy-date .birthday-privacy { margin-bottom:70px; }
 #projects .project-case .case-intro { max-width:none; display:grid; grid-template-columns:23% minmax(0,1fr); gap:32px; margin:45px 0 70px; }
 #projects .project-case .case-intro .case-prose { grid-column:2; }
 #projects .project-case .case-intro > section { grid-column:2; }
 #projects .project-case .case-intro > section .case-prose { grid-column:auto; }
 #projects .project-case .case-intro .case-meta { grid-column:2; }
 #projects .project-case .case-intro h3 { color:var(--muted); }
+#projects .project-case .fantasy-question > h3 { grid-column:1; margin:0; }
 #projects .project-case .birthday-video-slot, #projects .project-case .case-video { margin:75px 0 80px; }
 #projects .project-case .birthday-video-slot .project-film { max-width:none; }
 #projects .project-case .birthday-video-slot h3, #projects .project-case .case-video h3 { display:block; color:var(--muted); font-size:15px; }
@@ -519,6 +522,9 @@ body.viewing-home { background:#fff; }
   #projects .project-case .case-gallery, #projects #fantasy-stills,
   #projects #birthday-stills, #projects #project-home-away #home-away-stills,
   #projects #project-home-away .home-away-later .case-gallery { display:grid; grid-template-columns:minmax(0,1fr); gap:24px; }
+  #projects #project-fantasy-date .birthday-opening .case-gallery,
+  #projects #project-fantasy-date .birthday-pair .case-gallery,
+  #projects #project-fantasy-date .birthday-privacy .case-gallery { grid-template-columns:minmax(0,1fr); gap:24px; }
   #projects .project-case .case-gallery .project-still { grid-column:1 !important; grid-row:auto !important; width:100%; }
   #projects #project-home-away .home-away-opening { display:block; }
   #projects #project-home-away .home-away-opening p { margin-top:24px; }
