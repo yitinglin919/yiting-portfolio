@@ -517,7 +517,7 @@ body.viewing-home { background:#fff; }
 #projects .project-case .project-reflections .reflection-kicker { display:none; }
 #projects #project-home-away .home-away-opening { display:grid; grid-template-columns:59% minmax(0,1fr); align-items:center; gap:6%; margin:0 0 55px; }
 #projects #project-home-away .home-away-opening img { width:100%; height:auto; }
-#projects #project-home-away .home-away-opening p { font-size:clamp(20px,2.1vw,25px); line-height:1.45; margin:0; }
+#projects #project-home-away .home-away-opening p { font-family:"HuiFontP",cursive; font-size:clamp(17px,1.55vw,20px); line-height:1.5; letter-spacing:0; margin:0; }
 #projects #project-home-away .home-away-story { border:0; padding:0 0 58px; }
 #projects #project-home-away #home-away-stills { grid-template-columns:repeat(10,minmax(0,1fr)); gap:50px 30px; align-items:center; }
 #projects #home-away-stills .project-still:nth-child(1) { grid-column:1/7; }
