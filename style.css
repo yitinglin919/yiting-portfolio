@@ -409,9 +409,9 @@ body.viewing-home { background:#fff; }
   #videos { width:calc(100% - 40px); padding-inline:0; }
   #videos .selected-works-grid, #videos .more-works-grid { grid-template-columns:minmax(0,1fr); gap:32px; }
   #videos .selected-supporting { gap:32px; }
-  #videos .selected-context { min-height:24px; }
-  #videos .more-works { margin-top:64px; }
-  #videos .selected-lead .published-film strong { font-size:22px; }
+  #videos .selected-context, #videos .more-works > h2 { display:none; }
+  #videos .more-works { margin-top:32px; }
+  #videos .selected-lead .published-film strong { font-size:17px; }
 }
 
 #videos .published-film small { font-size:13px; font-weight:400; text-align:left; }
