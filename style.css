@@ -196,6 +196,7 @@ h1 { margin-bottom:16px; font:normal clamp(52px,6vw,92px)/.84 "Times New Roman",
 .published-film img.farmer-cover { aspect-ratio:8/5; object-fit:cover; object-position:center; }
 .published-film strong { display:block; margin:12px 0 6px; font-size:20px; font-weight:normal; line-height:1.25; }
 .published-film small,.social-film small { display:block; color:var(--muted); font-size:13px; line-height:1.4; }
+#videos .published-film .film-role { margin-top:2px; }
 .social-film { flex:0 0 280px; width:280px; scroll-snap-align:start; }
 .social-film img { display:block; width:100%; aspect-ratio:9/16; object-fit:contain; }
 .social-film a { display:block; margin:0; font-size:13px; color:var(--muted); }
