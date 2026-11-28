@@ -522,8 +522,8 @@ body.viewing-home { background:#fff; }
 #projects .project-case .birthday-video-slot, #projects .project-case .case-video { margin:75px 0 80px; }
 #projects .project-case .birthday-video-slot .project-film { max-width:none; }
 #projects .project-case .birthday-video-slot h3, #projects .project-case .case-video h3 { display:block; color:var(--muted); font-size:15px; }
-#projects .project-case .project-film span { left:50%; top:50%; right:auto; bottom:auto; transform:translate(-50%,-50%); display:grid; place-items:center; width:52px; height:52px; padding:0; overflow:hidden; font-size:0; border:1px solid rgba(255,255,255,.75); border-radius:50%; background:rgba(0,0,0,.22); color:white; }
-#projects .project-case .project-film span::after { content:'▶'; font-size:18px; line-height:1; margin-left:3px; }
+#projects .project-case .project-film span { left:50%; top:50%; right:auto; bottom:auto; transform:translate(-50%,-50%); display:grid; place-items:center; width:52px; height:52px; padding:0; border:1px solid rgba(255,255,255,.75); border-radius:50%; background:rgba(0,0,0,.22); }
+#projects .project-case .project-film span::after { content:''; display:block; width:0; height:0; border-top:8px solid transparent; border-bottom:8px solid transparent; border-left:13px solid #fff; transform:translateX(2px); }
 #projects .project-case .project-reflections { margin:0; padding-top:68px; }
 #projects .project-case .project-reflections .reflection-kicker { display:none; }
 #projects #project-home-away .home-away-opening { display:grid; grid-template-columns:59% minmax(0,1fr); align-items:center; gap:6%; margin:0 0 55px; }
