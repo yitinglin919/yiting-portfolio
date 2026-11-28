@@ -530,6 +530,7 @@ body.viewing-home { background:#fff; }
 #projects #project-home-away .home-away-opening img { width:100%; height:auto; }
 #projects #project-home-away .home-away-opening p { margin:0; }
 #projects #project-home-away .home-away-story { border:0; padding:0 0 58px; }
+#projects #project-home-away .home-away-story p { grid-column:2; }
 #projects #project-home-away #home-away-stills { grid-template-columns:repeat(10,minmax(0,1fr)); gap:50px 30px; align-items:center; }
 #projects #home-away-stills .project-still:nth-child(1) { grid-column:1/7; }
 #projects #home-away-stills .project-still:nth-child(2) { grid-column:7/11; }
